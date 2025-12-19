@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <th:block th:insert="~{include/bs5}"></th:block>
+  <script>
+    'use strict';
+  </script>
+</head>
+<body>
+<p><br/></p>
+<div class="container text-center">
+  <h2>길동이네 집에 오신것을 환영합니다.</h2>
+  <hr class="border-dark">
+  <div>
+    <img th:src="@{/images/112.jpg}" width="400px"/>
+  </div>
+  <hr class="border-dark">
+  <h4>RestController실습1</h4>
+  <div><a th:href="@{/hello}">hello호출</a></div>
+  <div><a th:href="@{/day}">오늘 요일은</a></div>
+  <div><a th:href="@{/friends}">친구목록(DB)</a></div>
+  <div><a th:href="@{/inputFriends}">친구추가(DB)</a></div>
+  <div><a th:href="@{/deleteFriends}">친구모두삭제(DB)</a></div>
+  <div><a th:href="@{/add(num1=10,num2=20)}">두수의합(10+20)</a></div>
+  <hr class="border-dark">
+</div>
+<p><br/></p>
+</body>
+</html>
